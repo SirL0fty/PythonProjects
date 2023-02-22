@@ -34,5 +34,5 @@ for filesize in glob.glob(pattern):
 
 print("Filename without path")
 for filename in glob.glob(pattern):
-    print(os.path.basename(filename))
+    print(os.path.basename(filename ))
 print("")

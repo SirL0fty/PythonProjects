@@ -3,7 +3,7 @@
 import getpass
 
 PIN: str = '1234' #hard codes the pin number
-max_tries = 3 #sets the max tries
+MAX_TRIES = 3 #sets the max tries
 
 
 def check_pin(the_pin): #defines the function check_pin
@@ -11,9 +11,9 @@ def check_pin(the_pin): #defines the function check_pin
 
 
 def run():
-    tries = 0 #set's the amount of tried
+    tries = 0 #set's the amount of tries
 
-    while tries < max_tries: #checks tries vs max tries
+    while tries < MAX_TRIES: #checks tries vs max tries
         entered_pin = getpass.getpass(prompt='Please enter your PIN: ') #ask's the user to input their pin
         if check_pin(entered_pin): #checks if pin is correct
             print('Correct')
