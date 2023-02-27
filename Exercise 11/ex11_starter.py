@@ -15,4 +15,4 @@ new_Belgium = Belgium.replace(",", ":")#creates a new variable and uses the repl
 print(new_Belgium)#prints new fucntion
 
 ls = new_Belgium.split(":")#Spilts the new list at the comma
-print(int(ls[1]) + int(ls[3]))#pulls out the number from the list in position 1 and 3
+print(int(ls[1]) + int(ls[3]))#converts the string to a number and add's them together to make 11183818
