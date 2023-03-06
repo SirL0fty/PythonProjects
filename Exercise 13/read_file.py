@@ -5,7 +5,6 @@ with  open('pelican.txt', 'r') as infile:
         for lines in infile:
                 print(lines, end='')
 
-
 #* Creates a list and opens the content of the file and add the content to the list removing all whitespaces and lines using .strip string method and prints the number of items in the list
 mylist = []
 
