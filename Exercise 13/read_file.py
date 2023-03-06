@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-# for lines in open('pelican.txt'):
-#         print(lines, end ="")
-#         print(type(lines), end="")
-
 #* opens the file and runs through the file and prints it out
 with  open('pelican.txt', 'r') as infile:
         for lines in infile:
