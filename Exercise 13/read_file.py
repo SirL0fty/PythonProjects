@@ -13,3 +13,4 @@ with open('pelican.txt', 'r') as file:
         mylist.append(line.strip())
 
 print(f"There are {len(mylist)} items in my list")
+
