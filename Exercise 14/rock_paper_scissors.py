@@ -27,7 +27,7 @@ print(f"{style.ENDC}The rules are simple! Rock wins against scissors; paper wins
 #loop created to continue playing the game until the user quits out
 while True:
         #ask the player to pick their choice
-        player1_choice = input("Please choose, rock, paper or scissors to begin: ")
+        player1_choice = input("Please type, rock, paper or scissors and press enter to begin: ")
 
         #validates the players choice
         while player1_choice not in game_choice:

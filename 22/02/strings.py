@@ -52,16 +52,16 @@ string2_sorted = sorted(string2)
 
 # Compare the sorted strings
 if string1_sorted == string2_sorted:
-    print("These strings are anagrams of each other!")
+        print("These strings are anagrams of each other!")
 else:
-    print("These strings are not anagrams.")
+        print("These strings are not anagrams.")
 
 pascal_string = "ThisIsAReallyLongStringThatIsFunToConvert"
 snake_string = ""
 
 for i, char in enumerate(pascal_string):
-    if char.isupper() and i != 0:
-        snake_string += "_"
-    snake_string += char.lower()
+        if char.isupper() and i != 0:
+                snake_string += "_"
+                snake_string += char.lower()
 
 print(snake_string)
