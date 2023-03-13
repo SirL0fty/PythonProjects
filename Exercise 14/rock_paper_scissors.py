@@ -18,21 +18,22 @@ class style:
 #set's the options for the game
 game_choice = ['rock', 'paper', 'scissors']
 
-#Welcoe message
-print(f"{style.HEADER}Welcome to Rock!, Paper!, Scissors!")
+#Welcome message
+print(f"{style.HEADER}Welcome to Rock!, Paper!, Scissors!{style.ENDC}")
 
 #the rules
-print(f"{style.ENDC}The rules are simple! Rock wins against scissors; paper wins against rock; and scissors wins against paper. If both players throw the same hand signal, it is considered a tie, and play resumes until there is a clear winner\n")
+print("The rules are simple! Rock wins against scissors; paper wins against rock; and scissors wins against paper. If both players throw the same hand signal, it is considered a tie, and play resumes until there is a clear winner\n")
 
 #loop created to continue playing the game until the user quits out
 while True:
+        
         #ask the player to pick their choice
         player1_choice = input("Please type, rock, paper or scissors and press enter to begin: ")
 
         #validates the players choice
         while player1_choice not in game_choice:
                 print(f"{style.WARNING} \nSorry, that was an invalid input, please try again!{style.ENDC}")
-                player1_choice = input("\nPlease choose, rock, paper or scissors to begin: ")
+                player1_choice = input("\nPlease type, rock, paper or scissors and press enter to begin: ")
         
         #randomises the computers choice
         computer_choice = random.choice(game_choice)
